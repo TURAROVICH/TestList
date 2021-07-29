@@ -3,6 +3,8 @@
 ## Build Setup
 
 ```bash
+#clone from github
+$ git clone https://github.com/TURAROVICH/TestList.git
 # install dependencies
 $ npm install
 
