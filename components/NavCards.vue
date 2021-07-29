@@ -112,6 +112,7 @@ color: #959DAD;
   align-items: center;
   justify-content: space-between;
     width: 100%;
+    margin-top: 66px;
 }
 .active{
   font-family: PT Sans;
