@@ -11,7 +11,7 @@
                 <span>4,5</span>
             </div>
 
-        <div > <img ref="img" width="143px" alt=""></div>
+        <div class="img-cnt" > <img ref="img" width="143px" alt=""></div>
         <div @mousemove="fill=`#000`" @mouseleave="fill=`#959DAD`" @click="addToBasket()">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.92 1.74C4.03331 1.58892 4.21115 1.5 4.4 1.5H11.6C11.7889 1.5 11.9667 1.58892 12.08 1.74L13.88 4.14C13.9579 4.24386 14 4.37018 14 4.5V12.9C14 13.3774 13.8104 13.8352 13.4728 14.1728C13.1352 14.5104 12.6774 14.7 12.2 14.7H3.8C3.32261 14.7 2.86477 14.5104 2.52721 14.1728C2.18964 13.8352 2 13.3774 2 12.9V4.5C2 4.37018 2.04211 4.24386 2.12 4.14L3.92 1.74ZM4.7 2.7L3.2 4.7V12.9C3.2 13.0591 3.26321 13.2117 3.37574 13.3243C3.48826 13.4368 3.64087 13.5 3.8 13.5H12.2C12.3591 13.5 12.5117 13.4368 12.6243 13.3243C12.7368 13.2117 12.8 13.0591 12.8 12.9V4.7L11.3 2.7H4.7Z" :fill="fill"/>
@@ -111,5 +111,13 @@ color: #1F1F1F;
     flex-direction: column;
     gap: 15px;
     width: 100%;
+}
+
+@media screen and (max-width:715px) {
+    .img-cnt{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
 }
 </style>

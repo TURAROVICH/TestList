@@ -186,9 +186,44 @@ color: #1F1F1F;
 .products{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
     grid-gap: 10px;
 }
 .link:hover{
     color: #59606D;
+}
+
+@media screen and (max-width:1125px) {
+  .products{
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .products{
+      grid-template-columns: 1fr 1fr ;
+  }
+}
+
+@media screen and (max-width:715px) {
+  .products{
+      grid-template-columns: 1fr  ;
+  }
+}
+
+@media screen and (max-width:585px) {
+  .nav{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .main-products{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 </style>
